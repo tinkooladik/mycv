@@ -45,8 +45,8 @@ captures/
 .idea/dictionaries
 .idea/libraries
 .idea/caches
-!.idea/codeStyles/
-!.idea/codeStyles/*.xml
+.idea/codeStyles/
+.idea/codeStyles/*.xml
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild

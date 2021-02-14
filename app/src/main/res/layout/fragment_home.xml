@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".screen.home.HomeFragment">
 
     <TextView
         android:id="@+id/roles"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
         android:padding="@dimen/spacing_large"
         android:text="@string/roles"
         android:textAppearance="@style/Text.Header" />
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_small">
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_linkedin" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_instagram" />
+
+    </LinearLayout>
+
+</LinearLayout>

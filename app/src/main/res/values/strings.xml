@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">MyCV</string>
+
+    <string name="now">now</string>
+
+    <!-- roles -->
     <string name="roles">Roles</string>
+    <string name="period">%s - %s</string>
 </resources>

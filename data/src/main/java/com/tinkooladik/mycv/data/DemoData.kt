@@ -3,6 +3,7 @@ package com.tinkooladik.mycv.data
 import com.tinkooladik.mycv.domain.company.Company
 import com.tinkooladik.mycv.domain.company.CompanyType
 import com.tinkooladik.mycv.domain.role.Role
+import com.tinkooladik.mycv.domain.skill.Skill
 import java.time.LocalDate
 import java.time.Month
 
@@ -17,10 +18,11 @@ val ROLES = listOf(
             type = CompanyType.OUTSOURCE,
             link = "http://www.virtuace.com/"
         ),
-        description = "SSIS - SQL server integration services",
+        description = "SQL server integration services",
         startTime = LocalDate.of(2015, Month.OCTOBER, 1),
         endTime = LocalDate.of(2016, Month.JULY, 1),
-        teamSize = 3
+        teamSize = 3,
+        skills = setOf(Skill.Sql)
     ),
     Role(
         id = 1,
@@ -33,7 +35,15 @@ val ROLES = listOf(
         description = "Apps for beauty salons, dental clinics, etc.",
         startTime = LocalDate.of(2016, Month.SEPTEMBER, 1),
         endTime = LocalDate.of(2017, Month.JULY, 1),
-        teamSize = 6
+        teamSize = 6,
+        skills = setOf(
+            Skill.Java,
+            Skill.Mvp,
+            Skill.Moxy,
+            Skill.Dagger,
+            Skill.Rx,
+            Skill.SocialNetworks
+        )
     ),
     Role(
         id = 2,
@@ -42,7 +52,8 @@ val ROLES = listOf(
         description = "Coloring games",
         startTime = LocalDate.of(2017, Month.JUNE, 1),
         endTime = LocalDate.of(2018, Month.SEPTEMBER, 1),
-        teamSize = 1
+        teamSize = 1,
+        skills = setOf(Skill.Java, Skill.Mvp, Skill.Moxy, Skill.Dagger, Skill.Rx, Skill.CustomView)
     ),
     Role(
         id = 3,
@@ -55,7 +66,20 @@ val ROLES = listOf(
         description = "Ukrainian Fin-tech startup. A lot of different projects.",
         startTime = LocalDate.of(2017, Month.NOVEMBER, 1),
         endTime = LocalDate.of(2018, Month.DECEMBER, 1),
-        teamSize = 3
+        teamSize = 3,
+        skills = setOf(
+            Skill.Java,
+            Skill.Mvp,
+            Skill.Moxy,
+            Skill.Dagger,
+            Skill.Rx,
+            Skill.Masterpass,
+            Skill.Maps,
+            Skill.MultiModule,
+            Skill.Payment,
+            Skill.Kotlin,
+            Skill.Push
+        )
     ),
     Role(
         id = 4,
@@ -68,7 +92,14 @@ val ROLES = listOf(
         description = "Part of Tachcard. Cryptocurrency wallet",
         startTime = LocalDate.of(2017, Month.NOVEMBER, 1),
         endTime = LocalDate.of(2018, Month.JUNE, 1),
-        teamSize = 1
+        teamSize = 1,
+        skills = setOf(
+            Skill.Java,
+            Skill.Mvp,
+            Skill.Moxy,
+            Skill.Dagger,
+            Skill.Rx,
+        )
     ),
     Role(
         id = 5,
@@ -81,7 +112,18 @@ val ROLES = listOf(
         description = "Several projects: online shop for Azerbaijan, client for Bluetooth boxing trackers",
         startTime = LocalDate.of(2018, Month.DECEMBER, 1),
         endTime = LocalDate.of(2019, Month.OCTOBER, 1),
-        teamSize = 1
+        teamSize = 1,
+        skills = setOf(
+            Skill.Kotlin,
+            Skill.Push,
+            Skill.SocialNetworks,
+            Skill.Bluetooth,
+            Skill.Camera,
+            Skill.CleanArchitecture,
+            Skill.CustomView,
+            Skill.Mvvm,
+            Skill.Rx,
+        )
     ),
     Role(
         id = 6,
@@ -94,7 +136,18 @@ val ROLES = listOf(
         description = "App for car’s Automotive head unit",
         startTime = LocalDate.of(2019, Month.OCTOBER, 1),
         endTime = LocalDate.of(2020, Month.APRIL, 1),
-        teamSize = 4
+        teamSize = 4,
+        skills = setOf(
+            Skill.Kotlin,
+            Skill.CustomView,
+            Skill.Mvvm,
+            Skill.MultiModule,
+            Skill.Maps,
+            Skill.Jetpack,
+            Skill.Rx,
+            Skill.Java,
+            Skill.Flutter
+        )
     ),
     Role(
         id = 7,
@@ -107,7 +160,8 @@ val ROLES = listOf(
         description = "Nice company, but project had closed before it started.",
         startTime = LocalDate.of(2020, Month.JULY, 1),
         endTime = LocalDate.of(2020, Month.JULY, 30),
-        teamSize = 2
+        teamSize = 2,
+        skills = setOf(Skill.Kotlin, Skill.Jetpack)
     ),
     Role(
         id = 8,
@@ -120,6 +174,16 @@ val ROLES = listOf(
         description = "Home automation systems",
         startTime = LocalDate.of(2020, Month.AUGUST, 1),
         endTime = LocalDate.now(),
-        teamSize = 8
+        teamSize = 8,
+        skills = setOf(
+            Skill.Kotlin,
+            Skill.Jetpack,
+            Skill.CleanArchitecture,
+            Skill.Coroutines,
+            Skill.Bluetooth,
+            Skill.Dagger,
+            Skill.Mvvm,
+            Skill.CustomView
+        )
     ),
 )

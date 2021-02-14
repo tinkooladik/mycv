@@ -32,7 +32,8 @@ class RolesListViewModel @Inject constructor(
             .catch { error ->
                 Timber.e(error, "Failed to load roles")
             }.onEach { roles ->
-                Timber.e("roles: $roles")
+                // FIXME: normally I would have different models & mappers for each layer,
+                //  but this app is too simple
                 _roles.postValue(roles)
             }.launchIn(viewModelScope)
     }

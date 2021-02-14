@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import com.tinkooladik.mycv.R
 import com.tinkooladik.mycv.base.BaseFragment
 import com.tinkooladik.mycv.databinding.FragmentRolesBinding
 import com.tinkooladik.mycv.domain.role.Role
@@ -31,7 +32,7 @@ class RolesListFragment : BaseFragment() {
 
         val adapter = RolesListAdapter(::onRoleItemClicked)
         binding.recycler.adapter = adapter
-        binding.recycler.addVerticalSpacingItemDecoration()
+        binding.recycler.addVerticalSpacingItemDecoration(R.dimen.spacing_small)
 
         observe(viewModel.roles) { roles ->
             adapter.submitList(roles)

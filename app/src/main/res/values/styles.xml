@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Header" parent="Text">
+        <item name="android:textSize">@dimen/h1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.Header2" parent="Text">
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/purple_200</item>
+    </style>
+
+    <style name="Text.Body" parent="Text">
+        <item name="android:textSize">@dimen/body</item>
+        <item name="android:textColor">@color/gray_light</item>
+    </style>
+
+    <style name="Text.Body2" parent="Text">
+        <item name="android:textSize">@dimen/body2</item>
+        <item name="android:textColor">@color/purple_200</item>
+    </style>
+</resources>
